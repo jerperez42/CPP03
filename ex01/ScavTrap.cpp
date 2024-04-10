@@ -6,7 +6,7 @@
 /*   By: jerperez <jerperez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 10:54:29 by jerperez          #+#    #+#             */
-/*   Updated: 2024/04/10 17:25:01 by jerperez         ###   ########.fr       */
+/*   Updated: 2024/04/10 17:32:08 by jerperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,8 +71,5 @@ void	ScavTrap::guardGate(void)
 	if (0 == this->getHP() || 0 == this->getEP())
 		std::cout	<< ": error: guardGate failed" << std::endl;
 	else
-	{
 		std::cout	<< " is now in Gate keeper mode." << std::endl;
-		this->setEP(this->getEP() - 1);
-	}
 }

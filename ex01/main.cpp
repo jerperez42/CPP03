@@ -6,7 +6,7 @@
 /*   By: jerperez <jerperez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/09 16:23:36 by jerperez          #+#    #+#             */
-/*   Updated: 2024/04/10 17:26:07 by jerperez         ###   ########.fr       */
+/*   Updated: 2024/04/10 17:33:50 by jerperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,13 @@ int main( void )
 	noenergy.beRepaired(0);
 	noenergy.beRepaired(10);
 	noenergy.beRepaired(100);
+
+	std::cout << std::endl << "-------GUARD GATE-------" << std::endl;
+	ScavTrap	guard("GU4RD-F0R3F3R-TP");
+	for (int i = 1; i < 55; i++)
+		guard.guardGate();
+	deadtrap.guardGate();
+	noenergy.guardGate();
 
 	std::cout << std::endl;
 	return (0);

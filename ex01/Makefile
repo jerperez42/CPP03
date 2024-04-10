@@ -6,17 +6,18 @@
 #    By: jerperez <jerperez@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/06 10:28:10 by jerperez          #+#    #+#              #
-#    Updated: 2024/04/10 11:49:54 by jerperez         ###   ########.fr        #
+#    Updated: 2024/04/10 16:47:12 by jerperez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ex00
+NAME = ex01
 
 CXX = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98	
 
 SRCS	=	main.cpp\
-			ClapTrap.cpp
+			ClapTrap.cpp\
+			ScavTrap.cpp
 
 OBJ_DIR	=	obj
 

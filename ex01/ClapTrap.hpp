@@ -6,13 +6,14 @@
 /*   By: jerperez <jerperez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 10:54:29 by jerperez          #+#    #+#             */
-/*   Updated: 2024/04/10 16:37:13 by jerperez         ###   ########.fr       */
+/*   Updated: 2024/04/10 17:21:51 by jerperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CLAPTRAP_HPP
 # define CLAPTRAP_HPP
 
+# include "ClapTrap.h"
 # include <string> 
 
 class	ClapTrap
@@ -30,6 +31,8 @@ class	ClapTrap
 		void			setName(const std::string &);
 		unsigned int	getHP(void) const;
 		void			setHP(unsigned int);
+		unsigned int	getMaxHP(void) const;
+		void			setMaxHP(unsigned int);
 		unsigned int	getEP(void) const;
 		void			setEP(unsigned int);
 		unsigned int	getDamage(void) const;
@@ -39,6 +42,7 @@ class	ClapTrap
 		unsigned int	_hp;
 		unsigned int	_ep;
 		unsigned int	_damage;
+		unsigned int	_max_hp;
 };
 
 #endif

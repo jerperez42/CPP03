@@ -1,32 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Fixed.hpp                                          :+:      :+:    :+:   */
+/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jerperez <jerperez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/09 16:06:30 by jerperez          #+#    #+#             */
-/*   Updated: 2024/02/12 12:00:41 by jerperez         ###   ########.fr       */
+/*   Created: 2024/04/10 10:54:29 by jerperez          #+#    #+#             */
+/*   Updated: 2024/04/10 15:03:06 by jerperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FIXED_HPP
-# define FIXED_HPP
+#ifndef CLAPTRAP_HPP
+# define CLAPTRAP_HPP
 
-# include "Fixed.h"
+# include <string> 
 
-class	Fixed
+class	ClapTrap
 {
 	public:
-		Fixed(void);
-		Fixed(const Fixed &);
-		~Fixed(void);
-		Fixed	&operator=(const Fixed &);
-		int		getRawBits(void) const;
-		void	setRawBits(int const);
+		ClapTrap(void);
+		ClapTrap(std::string);
+		ClapTrap(const ClapTrap &);
+		~ClapTrap(void);
+		ClapTrap	&operator=(const ClapTrap &);
+		void	attack(const std::string&);
+		void	takeDamage(unsigned int);
+		void	beRepaired(unsigned int);
 	private:
-		int					_raw;
-		static const int	_frc = FRC_NBIT;
+		std::string		_name;
+		unsigned int	_hp;
+		unsigned int	_ep;
+		unsigned int	_damage;
 };
 
 #endif

@@ -1,44 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jerperez <jerperez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 10:54:29 by jerperez          #+#    #+#             */
-/*   Updated: 2024/04/10 16:37:13 by jerperez         ###   ########.fr       */
+/*   Updated: 2024/04/10 16:19:44 by jerperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CLAPTRAP_HPP
-# define CLAPTRAP_HPP
+#ifndef SCAVTRAP_HPP
+# define SCAVTRAP_HPP
 
 # include <string> 
+# include "ClapTrap.hpp"
 
-class	ClapTrap
+class	ScavTrap : public ClapTrap
 {
 	public:
-		ClapTrap(void);
-		ClapTrap(std::string);
-		ClapTrap(const ClapTrap &);
-		~ClapTrap(void);
-		ClapTrap	&operator=(const ClapTrap &);
+		ScavTrap(void);
+		ScavTrap(std::string);
+		ScavTrap(const ScavTrap &);
+		~ScavTrap(void);
 		void	attack(const std::string&);
-		void	takeDamage(unsigned int);
-		void	beRepaired(unsigned int);
-		std::string		getName(void) const;
-		void			setName(const std::string &);
-		unsigned int	getHP(void) const;
-		void			setHP(unsigned int);
-		unsigned int	getEP(void) const;
-		void			setEP(unsigned int);
-		unsigned int	getDamage(void) const;
-		void			setDamage(unsigned int);
-	private:
-		std::string		_name;
-		unsigned int	_hp;
-		unsigned int	_ep;
-		unsigned int	_damage;
+		void	guardGate(void);
 };
 
 #endif

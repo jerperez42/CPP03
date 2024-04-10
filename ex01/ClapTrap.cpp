@@ -6,7 +6,7 @@
 /*   By: jerperez <jerperez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 10:54:29 by jerperez          #+#    #+#             */
-/*   Updated: 2024/04/10 15:50:32 by jerperez         ###   ########.fr       */
+/*   Updated: 2024/04/10 16:40:40 by jerperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,24 +15,6 @@
 
 # include <iostream> 
 # include <vector>
-
-// class	ClapTrap
-// {
-// 	public:
-// 		ClapTrap(void);
-// 		ClapTrap(std::string);
-// 		ClapTrap(const ClapTrap &);
-// 		~ClapTrap(void);
-// 		ClapTrap	&operator=(const ClapTrap &);
-// 		void	attack(const std::string& target);
-// 		void	takeDamage(unsigned int amount);
-// 		void	beRepaired(unsigned int amount);
-// 	private:
-// 		std::string	_name;
-// 		int			_hp;
-// 		int			_ep;
-// 		int			_atk;
-// };
 
 ClapTrap::ClapTrap(void)
 {
@@ -67,14 +49,54 @@ ClapTrap::~ClapTrap(void)
 	std::cout << ANSI_COLOR << "Claptrap: " << this << CLTR_DESTR_MSG << ANSI_END << std::endl;
 }
 
+unsigned int	ClapTrap::getHP(void) const
+{
+	return (this->_hp);
+}
+
+unsigned int	ClapTrap::getEP(void) const
+{
+	return (this->_ep);
+}
+
+unsigned int	ClapTrap::getDamage(void) const
+{
+	return (this->_damage);
+}
+
+std::string	ClapTrap::getName(void) const
+{
+	return (this->_name);
+}
+
+void	ClapTrap::setHP(unsigned int hp)
+{
+	this->_hp = hp;
+}
+
+void	ClapTrap::setEP(unsigned int ep)
+{
+	this->_ep = ep;
+}
+
+void	ClapTrap::setDamage(unsigned int damage)
+{
+	this->_damage = damage;
+}
+
+void	ClapTrap::setName(const std::string& name)
+{
+	this->_name = name;
+}
+
 ClapTrap	&ClapTrap::operator=(const ClapTrap &other)
 {
 	if (this != &other)
 	{
-		this->_hp = other._hp;
-		this->_ep = other._ep;
-		this->_damage = other._damage;
-		this->_name = other._name;
+		this->setHP(other.getHP());
+		this->setEP(other.getEP());
+		this->setDamage(other.getDamage());
+		this->setName(other.getName());
 	}
 	return (*this);
 }

@@ -1,31 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   FragTrap.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jerperez <jerperez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 10:54:29 by jerperez          #+#    #+#             */
-/*   Updated: 2024/04/11 11:07:43 by jerperez         ###   ########.fr       */
+/*   Updated: 2024/04/11 11:23:29 by jerperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAVTRAP_HPP
-# define SCAVTRAP_HPP
+#ifndef FRAGTRAP_H
+# define FRAGTRAP_H
 
-# include <string> 
-# include "ClapTrap.hpp"
-# include "ScavTrap.h"
-
-class	ScavTrap : public ClapTrap
-{
-	public:
-		ScavTrap(void);
-		ScavTrap(std::string);
-		ScavTrap(const ScavTrap &);
-		~ScavTrap(void);
-		void	attack(const std::string&);
-		void	guardGate(void);
-};
+# define FRAG_HP 100
+# define FRAG_EP 100
+# define FRAG_DAMAGE 30
+# define FRAG_NAME "FR4G-TP"
+# define FRAG_CLASSNAME "FragTrap"
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: jerperez <jerperez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 10:54:29 by jerperez          #+#    #+#             */
-/*   Updated: 2024/04/10 17:32:08 by jerperez         ###   ########.fr       */
+/*   Updated: 2024/04/11 11:21:44 by jerperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #include "ClapTrap.h"
 
 # include <iostream> 
-# include <vector>
 
 ScavTrap::ScavTrap(void)
 {

@@ -6,14 +6,13 @@
 /*   By: jerperez <jerperez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 10:54:29 by jerperez          #+#    #+#             */
-/*   Updated: 2024/04/10 17:25:28 by jerperez         ###   ########.fr       */
+/*   Updated: 2024/04/11 11:21:39 by jerperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
 # include <iostream> 
-# include <vector>
 
 ClapTrap::ClapTrap(void)
 {

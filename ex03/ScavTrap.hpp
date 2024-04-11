@@ -6,7 +6,7 @@
 /*   By: jerperez <jerperez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 10:54:29 by jerperez          #+#    #+#             */
-/*   Updated: 2024/04/11 11:07:43 by jerperez         ###   ########.fr       */
+/*   Updated: 2024/04/11 13:04:40 by jerperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include "ClapTrap.hpp"
 # include "ScavTrap.h"
 
-class	ScavTrap : public ClapTrap
+class	ScavTrap : virtual public ClapTrap
 {
 	public:
 		ScavTrap(void);

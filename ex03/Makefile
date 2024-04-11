@@ -6,7 +6,7 @@
 #    By: jerperez <jerperez@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/06 10:28:10 by jerperez          #+#    #+#              #
-#    Updated: 2024/04/11 11:30:22 by jerperez         ###   ########.fr        #
+#    Updated: 2024/04/11 11:56:35 by jerperez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,9 @@ CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRCS	=	main.cpp\
 			ClapTrap.cpp\
-			FragTrap.cpp
+			ScavTrap.cpp\
+			FragTrap.cpp\
+			DiamondTrap.cpp\
 
 OBJ_DIR	=	obj
 
